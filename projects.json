@@ -1,5 +1,7 @@
 {
-  "Backend Dev": [{ "week": "Week 1", "path": "Backend-Dev/Week1/index.html" }],
+  "Backend Dev": [
+    { "week": "Week 1", "path": "Projects/Backend-Dev/Week1/index.html" }
+  ],
 
   "Gen Art": [
     { "week": "Week 1", "path": "projects/GenArt/Week1/index.html" },
