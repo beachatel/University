@@ -4,7 +4,10 @@
   ],
 
   "Gen Art": [
-    { "week": "Week 1", "path": "Projects/Gen-Art/Week-1/index.html" }
+    {
+      "week": "Week 1",
+      "path": "Projects/Gen-Art/Week-1/Copy-Activity/index.html"
+    }
   ],
   "Math for Computing": [
     { "week": "Week 1", "path": "projects/MathForComputing/Week1/index.html" },
