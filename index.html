@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Projects</title>
+    <title>Y1 T2 Projects</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -15,34 +15,69 @@
       }
       li {
         margin: 10px 0;
+        cursor: pointer;
+        text-decoration: underline;
       }
       iframe {
         width: 90%;
         height: 500px;
         border: none;
         margin-top: 20px;
+        display: none;
+      }
+      .hidden {
+        display: none;
       }
     </style>
   </head>
   <body>
-    <h1>My Projects</h1>
-    <ul id="projectList"></ul>
+    <h1>Y1 T2 Projects</h1>
+    <h2>Select a Subject:</h2>
+    <ul id="subjectList"></ul>
+
+    <h2 id="weekTitle" class="hidden">Select a Week:</h2>
+    <ul id="weekList" class="hidden"></ul>
+
     <iframe id="projectFrame"></iframe>
 
     <script>
+      let projectsData = {};
+
+      // Load JSON data
       fetch("projects.json")
         .then((response) => response.json())
-        .then((projects) => {
-          const list = document.getElementById("projectList");
-          projects.forEach((proj) => {
+        .then((data) => {
+          projectsData = data;
+          const subjectList = document.getElementById("subjectList");
+
+          // Create subject buttons
+          for (const subject in data) {
             const li = document.createElement("li");
-            li.innerHTML = `<a href="#" onclick="loadProject('${proj.path}')">${proj.name}</a>`;
-            list.appendChild(li);
-          });
+            li.innerText = subject;
+            li.onclick = () => showWeeks(subject);
+            subjectList.appendChild(li);
+          }
         });
 
+      function showWeeks(subject) {
+        const weekList = document.getElementById("weekList");
+        const weekTitle = document.getElementById("weekTitle");
+        weekList.innerHTML = ""; // Clear previous weeks
+        weekList.classList.remove("hidden");
+        weekTitle.classList.remove("hidden");
+
+        projectsData[subject].forEach((week) => {
+          const li = document.createElement("li");
+          li.innerText = week.week;
+          li.onclick = () => loadProject(week.path);
+          weekList.appendChild(li);
+        });
+      }
+
       function loadProject(path) {
-        document.getElementById("projectFrame").src = path;
+        const frame = document.getElementById("projectFrame");
+        frame.src = path;
+        frame.style.display = "block";
       }
     </script>
   </body>
