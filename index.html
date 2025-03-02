@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        margin: 10px 0;
+      }
+      iframe {
+        width: 90%;
+        height: 500px;
+        border: none;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Projects</h1>
+    <ul id="projectList"></ul>
+    <iframe id="projectFrame"></iframe>
+
+    <script>
+      fetch("projects.json")
+        .then((response) => response.json())
+        .then((projects) => {
+          const list = document.getElementById("projectList");
+          projects.forEach((proj) => {
+            const li = document.createElement("li");
+            li.innerHTML = `<a href="#" onclick="loadProject('${proj.path}')">${proj.name}</a>`;
+            list.appendChild(li);
+          });
+        });
+
+      function loadProject(path) {
+        document.getElementById("projectFrame").src = path;
+      }
+    </script>
+  </body>
+</html>
