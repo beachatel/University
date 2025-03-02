@@ -1,25 +1,75 @@
 {
   "Backend Dev": [
-    { "week": "Week 1", "path": "Projects/Backend-Dev/Week-1/index.html" }
+    { "week": "Week 1", "path": "Projects/Backend-Dev/Week-1/index.html" },
+    {
+      "week": "Week 2",
+      "path": "Projects/Backend-Dev/Week-2/index.html"
+    },
+    {
+      "week": "Week 4",
+      "path": "Projects/Backend-Dev/Week-4/public/index.html"
+    },
+    {
+      "week": "Week 6",
+      "path": "Projects/Backend-Dev/Week-6/index.html"
+    },
+    {
+      "week": "Week 7",
+      "path": "Projects/Backend-Dev/Week-7/Activity-1/index.html"
+    }
   ],
 
   "Gen Art": [
     {
-      "week": "Week 1",
+      "week": "Week 1 A1",
       "path": "Projects/Gen-Art/Week-1/Copy-Activity/index.html"
     },
     {
-      "week": "Week 1",
+      "week": "Week 1 A2",
       "path": "Projects/Gen-Art/Week-1/Gallery-Activity/index.html"
+    },
+    {
+      "week": "Week 2",
+      "path": "Projects/Gen-Art/Week-2/Interactive-Image-Scrambler/index.html"
+    },
+    {
+      "week": "Week 3",
+      "path": "Projects/Gen-Art/Week-3/index.html"
+    },
+    {
+      "week": "Week 4",
+      "path": "Projects/Gen-Art/Week-4/index.html"
+    },
+    {
+      "week": "Week 6",
+      "path": "Projects/Gen-Art/Week-6/index.html"
+    },
+    {
+      "week": "Week 7",
+      "path": "Projects/Gen-Art/Week-7/index.html"
     }
   ],
+
   "Math for Computing": [
-    { "week": "Week 1", "path": "projects/MathForComputing/Week1/index.html" },
-    { "week": "Week 2", "path": "projects/MathForComputing/Week2/index.html" },
-    { "week": "Week 3", "path": "projects/MathForComputing/Week3/index.html" },
-    { "week": "Week 4", "path": "projects/MathForComputing/Week4/index.html" },
-    { "week": "Week 5", "path": "projects/MathForComputing/Week5/index.html" },
-    { "week": "Week 6", "path": "projects/MathForComputing/Week6/index.html" },
-    { "week": "Week 7", "path": "projects/MathForComputing/Week7/index.html" }
+    {
+      "week": "Week 3 A1",
+      "path": "Projects/Math-For-Computing/Week-3/Activity-1/index.html"
+    },
+    {
+      "week": "Week 3 A2",
+      "path": "Projects/Math-for-Computing/Week-3/Activity-2/index.html"
+    },
+    {
+      "week": "Week 6",
+      "path": "Projects/Math-For-Computing/Week-6/index.html"
+    },
+    {
+      "week": "Week 7 A1",
+      "path": "Projects/Math-For-Computing/Week-7/simple-harmonic-oscillation/index.html"
+    },
+    {
+      "week": "Week 7 A2",
+      "path": "Projects/Math-For-Computing/Week-7/oscilation-animation/index.html"
+    }
   ]
 }
