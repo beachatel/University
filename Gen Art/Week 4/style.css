@@ -1,0 +1,13 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+/* background(bgColorPicker.color());
+  // pg.background(bgColorPicker.color());
+  pg.background(0);
+  pg.push(); */

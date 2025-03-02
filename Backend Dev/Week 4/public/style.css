@@ -1,0 +1,240 @@
+* {
+  font-family: "golos-text", sans-serif;
+  font-weight: 10;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#item-image {
+  max-width: 100%; /* Ensures image never exceeds container width */
+  max-height: 70vh; /* Limits height to 80% of the viewport height */
+  object-fit: contain; /* Ensures the aspect ratio is maintained and the image doesn't stretch */
+}
+
+/* Hamburger Menu CSS */
+
+/* The sidepanel menu */
+.sidepanel {
+  height: 100%; /* Specify a height */
+  width: 0%; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #ffffff; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  border-right: 1px solid black;
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: underline;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 50px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #ffffff;
+}
+
+/* Left Container CSS */
+
+#left {
+  background-color: #ffffff;
+}
+
+#top-bar {
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 49.5%;
+  background-color: rgb(255, 255, 255);
+  border-bottom: #000000 solid 1px;
+}
+
+h1 {
+  width: 100%;
+  font-size: 20px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+
+h2 {
+  width: 100%;
+  font-size: 40px;
+  text-align: left;
+  color: rgb(5, 5, 5);
+}
+
+/* Right Container CSS */
+
+#right {
+  background-color: black;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  color: white;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  padding-top: 2vh;
+  size: 100px;
+}
+#rand-btn-container {
+  display: flex;
+  width: 80%;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  border-bottom: 1px solid white;
+  justify-content: center;
+}
+#random-search {
+  background-color: #000000;
+  text-decoration: none;
+  color: white;
+  border: 0.1vh solid white;
+  padding: 1vh;
+}
+
+p {
+  /* color: rgb(0, 0, 0);
+  text-align: left;
+  width: 50%;
+  white-space: pre-wrap; */
+  display: inline;
+  padding-left: 1vw;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #00ff6a;
+}
+
+a:active {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* About page */
+
+#aboutContainer {
+  justify-content: right;
+
+  height: 100vh;
+  width: 50vw;
+  position: absolute;
+  margin-left: 50vw;
+  top: 0;
+  bottom: 0;
+  color: #000000;
+  border-left: #000000 dotted 5px;
+  border-radius: 5vw;
+}
+
+#about {
+  text-align: center;
+  position: absolute;
+  font-size: 3vw;
+  text-decoration: underline;
+
+  color: #000000;
+}
+#abouth2 {
+  text-align: center;
+  font-size: 1.5vw;
+  margin-top: 15vh;
+  color: #000000;
+}
+
+/* index search page */
+
+#searchBox {
+  border: #000000 solid 1px;
+  width: 45vw;
+  height: 7vh;
+  position: absolute;
+  margin-top: 20vh;
+  margin-left: 2vw;
+}
+
+#rightSP {
+  background-color: rgb(0, 0, 0);
+  right: 0;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  color: white;
+}
+
+#search {
+  background-color: #000000;
+  text-decoration: none;
+  color: white;
+  border: 0.1vh solid white;
+  padding: 1vh;
+  position: absolute;
+  width: 5vw;
+  height: 7vh;
+  margin-left: 40vw;
+}
+
+#history {
+  position: absolute;
+}
+
+#filter {
+  position: absolute;
+  font-size: 1.5vw;
+}

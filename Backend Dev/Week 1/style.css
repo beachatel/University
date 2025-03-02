@@ -1,0 +1,13 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(29, 73, 242);
+    overflow: hidden;
+        height: 100%;
+}
+
+canvas {
+    display: block;
+}
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Object Search</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/idk4hib.css" />
+  </head>
+
+  <body>
+    <div id="top-bar">
+      <!-- hamburger menu -->
+      <div id="menu" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onClick="closeNav()"
+          >&#x2715;</a
+        >
+      </div>
+      <!-- hamburger button -->
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+      <!-- title -->
+      <h1>The Metropolitan Museum of Art - Object Index Search</h1>
+    </div>
+
+    <div id="filterContainer">
+      <p id="filter">Filter By</p>
+    </div>
+
+    <div id="searchBox">
+      <button id="search" onClick="search()">Search</button>
+      <script src="../search.js"></script>
+      <script src="../menu-script.js"></script>
+    </div>
+
+    <div id="rightSP">
+      <div id="main-content">
+        <img id="item-image" />
+        <p id="item-info" class="info-text"></p>
+      </div>
+    </div>
+
+    <script></script>
+  </body>
+</html>

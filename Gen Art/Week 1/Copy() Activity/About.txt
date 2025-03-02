@@ -1,0 +1,7 @@
+This activity demonstrates my ability to use the copy() function in p5 js.
+
+The sliders on the right all 10-100 value
+
+Top one controls source image width
+Middle one controls source image height
+Bottom one controls grid size variable

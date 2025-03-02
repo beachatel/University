@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chart.js with Annotations</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.0.2"></script>
+  </head>
+  <body>
+    <h1>Sleep Quality Data</h1>
+    <canvas id="myChart"></canvas>
+
+    <label for="yaxis-data">Y-axis data:</label>
+    <select id="yaxis-data" onchange="updateChart()">
+      <!-- options go here -->
+      <option value="4">Sleep Duration</option>
+      <option value="5" selected>Sleep Quality</option>
+      <option value="6" selected>Physical Activity Level</option>
+      <option value="7" selected>Stress Level</option>
+      <option value="9" selected>Blood Pressure</option>
+    </select>
+    <label for="xaxis-data">X-axis data:</label>
+    <select id="xaxis-data" onchange="updateChart()">
+      <!-- options go here -->
+      <option value="2">Age</option>
+      <option value="3">Occupation</option>
+      <option value="10" selected>Heart Rate</option>
+    </select>
+    <script src="main.js"></script>
+  </body>
+</html>
