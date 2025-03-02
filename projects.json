@@ -4,13 +4,7 @@
   ],
 
   "Gen Art": [
-    { "week": "Week 1", "path": "projects/GenArt/Week1/index.html" },
-    { "week": "Week 2", "path": "projects/GenArt/Week2/index.html" },
-    { "week": "Week 3", "path": "projects/GenArt/Week3/index.html" },
-    { "week": "Week 4", "path": "projects/GenArt/Week4/index.html" },
-    { "week": "Week 5", "path": "projects/GenArt/Week5/index.html" },
-    { "week": "Week 6", "path": "projects/GenArt/Week6/index.html" },
-    { "week": "Week 7", "path": "projects/GenArt/Week7/index.html" }
+    { "week": "Week 1", "path": "Projects/Gen-Art/Week-1/index.html" }
   ],
   "Math for Computing": [
     { "week": "Week 1", "path": "projects/MathForComputing/Week1/index.html" },
