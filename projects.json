@@ -2,77 +2,77 @@
   "Backend Dev": [
     {
       "week": "Week 1",
-      "path": "https://beachatel.github.io/testweb/Projects/Backend-Dev/Week-1/index.html"
+      "path": "https://beachatel.github.io/University/Projects/Backend-Dev/Week-1/index.html"
     },
     {
       "week": "Week 2",
-      "path": "https://beachatel.github.io/testweb/Projects/Backend-Dev/Week-2/index.html"
+      "path": "https://beachatel.github.io/University/Projects/Backend-Dev/Week-2/index.html"
     },
     {
       "week": "Week 4",
-      "path": "https://beachatel.github.io/testweb/Projects/Backend-Dev/Week-4/public/index.html"
+      "path": "https://beachatel.github.io/University/Projects/Backend-Dev/Week-4/public/index.html"
     },
     {
       "week": "Week 6",
-      "path": "https://beachatel.github.io/testweb/Projects/Backend-Dev/Week-6/index.html"
+      "path": "https://beachatel.github.io/University/Projects/Backend-Dev/Week-6/index.html"
     },
     {
       "week": "Week 7",
-      "path": "https://beachatel.github.io/testweb/Projects/Backend-Dev/Week-7/Activity-1/index.html"
+      "path": "https://beachatel.github.io/University/Projects/Backend-Dev/Week-7/Activity-1/index.html"
     }
   ],
 
   "Gen Art": [
     {
       "week": "Week 1 A1",
-      "path": "https://beachatel.github.io/testweb/Projects/Gen-Art/Week-1/Copy-Activity/index.html"
+      "path": "https://beachatel.github.io/University/Projects/Gen-Art/Week-1/Copy-Activity/index.html"
     },
     {
       "week": "Week 1 A2",
-      "path": "https://beachatel.github.io/testweb/Projects/Gen-Art/Week-1/Gallery-Activity/index.html"
+      "path": "https://beachatel.github.io/University/Projects/Gen-Art/Week-1/Gallery-Activity/index.html"
     },
     {
       "week": "Week 2",
-      "path": "https://beachatel.github.io/testweb/Projects/Gen-Art/Week-2/Interactive-Image-Scrambler/index.html"
+      "path": "https://beachatel.github.io/University/Projects/Gen-Art/Week-2/Interactive-Image-Scrambler/index.html"
     },
     {
       "week": "Week 3",
-      "path": "https://beachatel.github.io/testweb/Projects/Gen-Art/Week-3/index.html"
+      "path": "https://beachatel.github.io/University/Projects/Gen-Art/Week-3/index.html"
     },
     {
       "week": "Week 4",
-      "path": "https://beachatel.github.io/testweb/Projects/Gen-Art/Week-4/index.html"
+      "path": "https://beachatel.github.io/University/Projects/Gen-Art/Week-4/index.html"
     },
     {
       "week": "Week 6",
-      "path": "https://beachatel.github.io/testweb/Projects/Gen-Art/Week-6/index.html"
+      "path": "https://beachatel.github.io/University/Projects/Gen-Art/Week-6/index.html"
     },
     {
       "week": "Week 7",
-      "path": "https://beachatel.github.io/testweb/Projects/Gen-Art/Week-7/index.html"
+      "path": "https://beachatel.github.io/University/Projects/Gen-Art/Week-7/index.html"
     }
   ],
 
   "Math for Computing": [
     {
       "week": "Week 3 A1",
-      "path": "https://beachatel.github.io/testweb/Projects/Math-For-Computing/Week-3/Activity-1/index.html"
+      "path": "https://beachatel.github.io/University/Projects/Math-For-Computing/Week-3/Activity-1/index.html"
     },
     {
       "week": "Week 3 A2",
-      "path": "https://beachatel.github.io/testweb/Projects/Math-for-Computing/Week-3/Activity-2/index.html"
+      "path": "https://beachatel.github.io/University/Projects/Math-for-Computing/Week-3/Activity-2/index.html"
     },
     {
       "week": "Week 6",
-      "path": "https://beachatel.github.io/testweb/Projects/Math-For-Computing/Week-6/index.html"
+      "path": "https://beachatel.github.io/University/Projects/Math-For-Computing/Week-6/index.html"
     },
     {
       "week": "Week 7 A1",
-      "path": "https://beachatel.github.io/testweb/Projects/Math-For-Computing/Week-7/simple-harmonic-oscillation/index.html"
+      "path": "https://beachatel.github.io/University/Projects/Math-For-Computing/Week-7/simple-harmonic-oscillation/index.html"
     },
     {
       "week": "Week 7 A2",
-      "path": "https://beachatel.github.io/testweb/Projects/Math-For-Computing/Week-7/oscilation-animation/index.html"
+      "path": "https://beachatel.github.io/University/Projects/Math-For-Computing/Week-7/oscilation-animation/index.html"
     }
   ]
 }
