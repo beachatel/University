@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css">
+
+    <title>Live Data API</title>
+    <!-- LEAFLET CONFIG -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+    <h1>Satellite Geodata Weaving</h1>
+    <h2>Live ISS coordinates manipulating a p5.js sketch</h2>
+    <div id="map"></div>
+
+    <select id="satSelector"></select>
+    <p>
+        latitude: <span id="lat"></span><br />
+        longitude: <span id="lon"></span>
+    </p>
+
+    <div id="MyCanvas">
+
+    </div>
+
+    </div>
+    <script src="sketch.js"></script>
+</body>
+<!-- <script src="sketch.js"></script> -->
+
+
+
+</html>

@@ -1,0 +1,14 @@
+html, body {
+  margin: 1em;
+  padding: 0;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+}
+ canvas {
+  display: block;
+}
+        #map {
+            height: 180px;
+            background-color: black;
+        }
