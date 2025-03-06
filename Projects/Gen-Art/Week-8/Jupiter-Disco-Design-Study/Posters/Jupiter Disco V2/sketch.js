@@ -77,7 +77,7 @@ pop();
     text("JUPITER DISCO",width / 30,height / 1.12)
     textSize(40);
     fill(255,100,200);
-        text("Design Study. Made with p5.js", width / 28,height / 1.02)
+        text("Animated Poster Concept Series V2", width / 28,height / 1.02)
 
    angle += 0.01
 }
