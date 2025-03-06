@@ -18,7 +18,7 @@ function draw() {
 ellipseMode(CENTER);
 push();
 
-translate(width/2,height/3 )
+translate(width/2,height/2.5 )
   let x1  = map(sin(angle),-1,2,-amplitude,amplitude);
    let y1  = map(cos(angle),-1,7,-amplitude,amplitude);
 
@@ -73,7 +73,7 @@ stroke("#44083c");
 pop();
 
 push();
-translate(width/2,height/3)
+translate(width/2,height/2.5)
 scale(0.2);
  for ( i = 0; i  < 14; i++) {
     if (i<17) {

@@ -56,7 +56,7 @@ function draw() {
   //  ellipse(y1  *= -2,x1 *= -2,30,30);
     // ellipse(x,y,x1,y1);
   
-console.log(angle);
+
 if (angle > 3){
   angle *= -10;
 }

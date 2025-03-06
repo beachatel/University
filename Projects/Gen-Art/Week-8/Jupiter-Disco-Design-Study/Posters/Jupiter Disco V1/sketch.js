@@ -26,7 +26,7 @@ function draw() {
 
   let y  = map(sin(angle),-1,1,-amplitude,amplitude);
     let x  = map(cos(angle),-1,7,-amplitude,amplitude);
-  console.log(sin(angle));
+
 
   ellipse(y,x,100,100);
   scale(0.7);
