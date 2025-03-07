@@ -1,60 +1,64 @@
+let sketch3 = function(p){
+
+
 let angle = 0.001;
 let amplitude = 40;
 let gridSize = 100;
 let font;
 let counter = 10;
 
-function preload(){
-  font = loadFont("Fonts/Magistral.ttf")
+ p.preload = function(){
+  font = p.loadFont("Fonts/Magistral.ttf")
 }
-function setup() {
-  createCanvas(windowWidth, windowHeight);
-
+p.setup = function() {
+  let cnv = p.createCanvas(p.windowWidth / 2, p.windowHeight);
+  let container = document.getElementById("container")
+  
 }
 
-function draw() {
+p.draw = function() {
 
   
-ellipseMode(CENTER);
-push();
+p.ellipseMode(p.CENTER);
+p.push();
 
-translate(width/2,height/2.5 )
-  let x1  = map(sin(angle),-1,2,-amplitude,amplitude);
-   let y1  = map(cos(angle),-1,7,-amplitude,amplitude);
+p.translate(p.width/2,p.height/2.5 )
+  let x1  = p.map(p.sin(angle),-1,2,-amplitude,amplitude);
+   let y1  = p.map(p.cos(angle),-1,7,-amplitude,amplitude);
 
-scale(0.4);
+p.scale(0.4);
 
- background("#0b0b0b");
-stroke("#44083c");
-  fill("#9cd2c7");
-  strokeWeight(10);
+ p.background("#0b0b0b");
+p.stroke("#44083c");
+  p.fill("#9cd2c7");
+  p.strokeWeight(10);
   
 
-    x = width/2;
-  y = height/2;
+    x = p.width/2;
+  y = p.height/2;
   s = 300;
   s2 = s;
 
 
 
-  strokeWeight(20);
+  p.strokeWeight(20);
   for ( i = 0; i  < 14; i++) {
     if (i<17) {
    
-      rotate(angle * 5);
-      ellipse(x, y - (i*x1), s, s2);
+      p.rotate(angle * 5);
+      p.ellipse(x, y - (i*x1), s, s2);
       y-= 3;
       s2 -= 7;
     } else if (i<28) {
 
-      rotate(angle * y1);
-      ellipse(x, y - (i*x1), s, s2);
+      p.rotate(angle * y1);
+      p.ellipse(x, y - (i*x1), s, s2);
       s-=26;
       s2 -=25;
       y+=20;
     } else {
 
-      ellipse(x, y - (i*x1), s, s2);
+      p.ellipse(x, y - (i*x1), s, s2);
       s-=16;
       s2 -=10;
       y-=1;
@@ -64,34 +68,34 @@ stroke("#44083c");
 
   
   
-    ellipse(x, y - (i*x1), s, s2);
+    p.ellipse(x, y - (i*x1), s, s2);
 
 
   
 
 
-pop();
+p.pop();
 
-push();
-translate(width/2,height/2.5)
-scale(0.2);
+p.push();
+p.translate(p.width/2,p.height/2.5)
+p.scale(0.2);
  for ( i = 0; i  < 14; i++) {
     if (i<17) {
    
-      rotate(angle * y1 / 5);
-      ellipse(x, y - (i*x1), s, s2);
+     p. rotate(angle * y1 / 5);
+     p. ellipse(x, y - (i*x1), s, s2);
       y-= 3;
       s2 -= 7;
     } else if (i<28) {
 
-      rotate(angle);
-      ellipse(x, y - (i*x1), s, s2);
+      p.rotate(angle);
+      p.ellipse(x, y - (i*x1), s, s2);
       s-=26;
       s2 -=25;
       y+=20;
     } else {
 
-      ellipse(x, y - (i*x1), s, s2);
+      p.ellipse(x, y - (i*x1), s, s2);
       s-=16;
       s2 -=10;
       y-=1;
@@ -101,18 +105,18 @@ scale(0.2);
 
   
   
-    ellipse(x, y - (i*x1), s, s2);
+    p.ellipse(x, y - (i*x1), s, s2);
 
 
   
 
 
-pop();
+p.pop();
 
   
  
-//   for (let x = 0; x < width ; x += gridSize / 2){
-//     for (let y = 0; y < height - 170; y += gridSize * 1.5){
+//   for (let x = 0; x < p.width ; x += gridSize / 2){
+//     for (let y = 0; y < p.height - 170; y += gridSize * 1.5){
 // for (i = 0; i < counter; i++){
 //   rotate(angle / 1.5);
 //   ellipse(x * i,y + i,x1 / 2,y1 / 2);
@@ -129,23 +133,25 @@ pop();
 
 
 
-  fill("#9cd2c7");
-  noStroke();
-  rectMode(CENTER);
-    rect(0,height - 90,width  *2, height / 5);
-    fill(0);
-    rect(0,height,width  *2, height / 6);
-  fill(0);
-  textFont(font);
-  textSize(90)
+  p.fill("#9cd2c7");
+  p.noStroke();
+  p.rectMode(p.CENTER);
+    p.rect(0,p.height - 90,p.width  *2, p.height / 5);
+    p.fill(0);
+    p.rect(0,p.height,p.width  *2, p.height / 6);
+  p.fill(0);
+  p.textFont(font);
+  p.textSize(90)
   
-    text("JUPITER DISCO",width / 30,height / 1.12)
-    textSize(40);
-    fill("#9cd2c7");
-        text("Animated Poster Concept Series V3", width / 28,height / 1.02)
+    p.text("JUPITER DISCO",p.width / 30,p.height / 1.12)
+    p.textSize(40);
+    p.fill("#9cd2c7");
+        p.text("Animated Poster Concept Series V3", p.width / 28,p.height / 1.02)
 
    angle += 0.001
 
 }
+}
+new p5(sketch3,'sketch3container');
 
     

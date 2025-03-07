@@ -1,55 +1,64 @@
+let sketch1 = function(p){
+
+
 let angle = 0.1;
 let amplitude = 200;
 let gridSize = 100;
 let font;
 
-function preload(){
-  font = loadFont("Fonts/Magistral.ttf")
+p.preload = function(){
+  font = p.loadFont("Fonts/Magistral.ttf")
 }
-function setup() {
-  createCanvas(windowWidth, windowHeight);
-   background("#0b0b0b");
+p.setup = function() {
+  p.createCanvas(p.windowWidth / 2, p.windowHeight);
+   p.background("#0b0b0b");
 }
 
-function draw() {
-  push();
-  translate(width/2,height/3);
+p.draw = function () {
+    // p.scale(0.5);
+  p.push();
 
-  for (let x = 0; x < width; x += gridSize){
-    for (let y = 0; y < height; y+= gridSize){
+  p.translate(p.width/2,p.height/3);
 
-
-  scale(0.9);
-  fill(0,0,255);
-  stroke(255,100,100,150);
-  strokeWeight(2);
-
-  let y  = map(sin(angle),-1,1,-amplitude,amplitude);
-    let x  = map(cos(angle),-1,7,-amplitude,amplitude);
+  for (let x = 0; x < p.width; x += gridSize){
+    for (let y = 0; y < p.height; y+= gridSize){
 
 
-  ellipse(y,x,100,100);
-  scale(0.7);
-  ellipse(y *= -2,x *= -2,100,100);
+  p.scale(0.9);
+  p.fill(0,0,255);
+  p.stroke(255,100,100,150);
+  p.strokeWeight(2);
+
+  let y  = p.map(p.sin(angle),-1,1,-amplitude,amplitude);
+    let x  = p.map(p.cos(angle),-1,7,-amplitude,amplitude);
+
+
+  p.ellipse(y,x,100,100);
+  p.scale(0.7);
+  p.ellipse(y *= -2,x *= -2,100,100);
   
 
     }
   }
-pop();
-  fill(255,100,100);
-  noStroke();
-  rectMode(CENTER);
-    rect(0,height - 90,width  *2, height / 5);
-    fill(0);
-    rect(0,height,width  *2, height / 6);
-  fill(0);
-  textFont(font);
-  textSize(90)
+p.pop();
+  p.fill(255,100,100);
+  p.noStroke();
+  p.rectMode(p.CENTER);
+    p.rect(0,p.height - 90,p.width  *2, p.height / 5);
+    p.fill(0);
+    p.rect(0,p.height,p.width  *2, p.height / 6);
+ p.fill(0);
+  p.textFont(font);
+  p.textSize(90)
   
-    text("JUPITER DISCO",width / 30,height / 1.12)
-    textSize(40);
-    fill(255,100,100);
-        text("Animated Poster Concept Series V1", width / 28,height / 1.02)
+    p.text("JUPITER DISCO",p.width / 30,p.height / 1.12)
+    p.textSize(40);
+    p.fill(255,100,100);
+        p.text("Animated Poster Concept Series V1", p.width / 28,p.height / 1.02)
 
    angle += 0.01
 }
+}
+
+new p5(sketch1,'sketch1container');
+
