@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Random Object View</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/idk4hib.css" />
-  </head>
+  <title>Random Object View</title>
 
-  <body>
-    <div id="left">
-      <div id="top-bar">
-        <!-- hamburger menu -->
-        <div id="menu" class="sidepanel">
-          <a href="javascript:void(0)" class="closebtn" onClick="closeNav()"
-            >&#x2715;</a
-          >
-        </div>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/idk4hib.css" />
+</head>
 
-        <!-- hamburger button -->
-        <button class="openbtn" onclick="openNav()">&#9776;</button>
-        <!-- title -->
-        <h1>The Metropolitan Museum of Art - Random Object View</h1>
+<body>
+  <div id="left">
+    <div id="top-bar">
+      <!-- hamburger menu -->
+      <div id="menu" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&#x2715;</a>
       </div>
-      <p id="history">History</p>
-      <script src="../rand.js"></script>
-      <script src="../menu-script.js"></script>
+
+      <!-- hamburger button -->
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+      <!-- title -->
+      <h1>The Metropolitan Museum of Art - Random Object View</h1>
     </div>
+    <p id="history">History</p>
+    <script src="https://beachatel.github.io/University/Projects/Backend-Dev/Week-4/rand.js"></script>
+    <script src="https://beachatel.github.io/University/Projects/Backend-Dev/Week-4/menu-script.js"></script>
+  </div>
 
-    <div id="right">
-      <div id="main-content">
-        <div id="rand-btn-container">
-          <button id="random-search" onClick="randomSearch()">
-            Random Object
-          </button>
-        </div>
-
-        <img id="item-image" />
-
-        <p id="item-info" class="info-text"></p>
+  <div id="right">
+    <div id="main-content">
+      <div id="rand-btn-container">
+        <button id="random-search" onClick="randomSearch()">
+          Random Object
+        </button>
       </div>
-    </div>
 
-    <script>
-      let data = [];
-      randLeftBox();
-    </script>
-  </body>
+      <img id="item-image" />
+
+      <p id="item-info" class="info-text"></p>
+    </div>
+  </div>
+
+  <script>
+    let data = [];
+    randLeftBox();
+  </script>
+</body>
+
 </html>
