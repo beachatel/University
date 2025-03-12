@@ -16,7 +16,7 @@ let winWidth, winHeight; //change
 let r0 = 0;
 
 function preload() {
-  EstragonThin = new FontFace("EstragonThin", "url(/Fonts/EstragonThin.ttf)");
+  EstragonThin = new FontFace("EstragonThin", "beachatel/University/blob/main/Projects/Backend-Dev/Week-1/Fonts/EstragonBold.ttf");
   EstragonLight = new FontFace(
     "EstragonLight",
     "url(/Fonts/EstragonLight.ttf)"
