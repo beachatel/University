@@ -16,32 +16,42 @@ let winWidth, winHeight; //change
 let r0 = 0;
 
 function preload() {
-  EstragonThin = new FontFace("EstragonThin", "beachatel/University/blob/main/Projects/Backend-Dev/Week-1/Fonts/EstragonBold.ttf");
-  EstragonLight = new FontFace(
-    "EstragonLight",
-    "url(/Fonts/EstragonLight.ttf)"
-  );
-  EstragonRegular = new FontFace(
-    "EstragonRegular",
-    "url(/Fonts/EstragonRegular.ttf)"
-  );
-  EstragonMedium = new FontFace(
-    "EstragonMedium",
-    "url(/Fonts/EstragonMedium.ttf)"
-  );
-  EstragonBold = new FontFace("EstragonBold", "url(/Fonts/EstragonBold.ttf)");
-  EstragonHeavy = new FontFace(
-    "EstragonHeavy",
-    "url(/Fonts/EstragonHeavy.ttf)"
-  );
 
-  // Load fonts asynchronously
-  EstragonThin.load().then((loadedFont) => document.fonts.add(loadedFont));
-  EstragonLight.load().then((loadedFont) => document.fonts.add(loadedFont));
-  EstragonRegular.load().then((loadedFont) => document.fonts.add(loadedFont));
-  EstragonMedium.load().then((loadedFont) => document.fonts.add(loadedFont));
-  EstragonBold.load().then((loadedFont) => document.fonts.add(loadedFont));
-  EstragonHeavy.load().then((loadedFont) => document.fonts.add(loadedFont));
+EstragonThin = new FontFace(
+  "EstragonThin",
+  "url(https://res.cloudinary.com/din8rv70n/raw/upload/v1742740021/EstragonThin_g7xqsn.ttf)"
+);
+EstragonLight = new FontFace(
+  "EstragonLight",
+  "url(https://res.cloudinary.com/din8rv70n/raw/upload/v1742740027/EstragonLight_gxdshn.ttf)"
+);
+EstragonRegular = new FontFace(
+  "EstragonRegular",
+  "url(https://res.cloudinary.com/din8rv70n/raw/upload/v1742740021/EstragonRegular.ttf)"
+);
+EstragonMedium = new FontFace(
+  "EstragonMedium",
+  "url(https://res.cloudinary.com/din8rv70n/raw/upload/v1742740021/EstragonMedium.ttf)"
+);
+EstragonBold = new FontFace(
+  "EstragonBold",
+  "url(https://res.cloudinary.com/din8rv70n/raw/upload/v1742740021/EstragonBold.ttf)"
+);
+EstragonHeavy = new FontFace(
+  "EstragonHeavy",
+  "url(https://res.cloudinary.com/din8rv70n/raw/upload/v1742740021/EstragonHeavy.ttf)"
+);
+
+
+// Load fonts asynchronously
+EstragonThin.load().then((loadedFont) => document.fonts.add(loadedFont));
+EstragonLight.load().then((loadedFont) => document.fonts.add(loadedFont));
+EstragonRegular.load().then((loadedFont) => document.fonts.add(loadedFont));
+EstragonMedium.load().then((loadedFont) => document.fonts.add(loadedFont));
+EstragonBold.load().then((loadedFont) => document.fonts.add(loadedFont));
+EstragonHeavy.load().then((loadedFont) => document.fonts.add(loadedFont));
+
+// ...existing code...
 }
 
 function setup() {
