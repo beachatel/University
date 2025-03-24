@@ -127,6 +127,11 @@ img {
   border-bottom: 1px solid white;
   justify-content: center;
 }
+
+#random-search:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
 #random-search {
   background-color: #000000;
   text-decoration: none;
@@ -232,6 +237,7 @@ a:active {
 
 #history {
   position: absolute;
+  /* margin-bottom: 20vh; */
 }
 
 #filter {

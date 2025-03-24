@@ -67,7 +67,7 @@ function randLeftBox(data) {
   divBox.style.marginTop = "0.5vw";
   divBox.style.marginRight = "1vw";
   divBox.style.fontSize = "1vw";
-  divBox.style.border = "2px solid black";
+  divBox.style.border = "2px solid red";
   divBox.style.width = "45vw";
 
   divBox.appendChild(anchor);

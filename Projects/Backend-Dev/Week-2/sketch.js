@@ -5,7 +5,7 @@ let zonaImg = [];
 let zonaImgPaths = ['img/1.jpg',"img/2.jpg"];
 
 function preload(){
-  NewOrderMedium = new FontFace('NewOrderMedium', 'url(/Fonts/NewOrderMedium.ttf)');
+  NewOrderMedium = new FontFace('NewOrderMedium', 'url(https://res.cloudinary.com/din8rv70n/raw/upload/v1742824389/NewOrderMedium_sh0dlc.ttf)');
   NewOrderMedium.load().then((loadedFont) => document.fonts.add(loadedFont));
 
 //  for (let i = 0; i < zonaImgPaths.length; i++) {
