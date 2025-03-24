@@ -27,19 +27,19 @@ EstragonLight = new FontFace(
 );
 EstragonRegular = new FontFace(
   "EstragonRegular",
-  "url(https://res.cloudinary.com/din8rv70n/raw/upload/v1742740021/EstragonRegular.ttf)"
+  "url(https://res.cloudinary.com/din8rv70n/raw/upload/v1742740026/EstragonRegular_jswbdk.ttf)"
 );
 EstragonMedium = new FontFace(
   "EstragonMedium",
-  "url(https://res.cloudinary.com/din8rv70n/raw/upload/v1742740021/EstragonMedium.ttf)"
+  "url(https://res.cloudinary.com/din8rv70n/raw/upload/v1742740024/EstragonMedium_swlqfj.ttf)"
 );
 EstragonBold = new FontFace(
   "EstragonBold",
-  "url(https://res.cloudinary.com/din8rv70n/raw/upload/v1742740021/EstragonBold.ttf)"
+  "url(https://res.cloudinary.com/din8rv70n/raw/upload/v1742740002/EstragonBold_xs07oi.ttf)"
 );
 EstragonHeavy = new FontFace(
   "EstragonHeavy",
-  "url(https://res.cloudinary.com/din8rv70n/raw/upload/v1742740021/EstragonHeavy.ttf)"
+  "url(https://res.cloudinary.com/din8rv70n/raw/upload/v1742740032/EstragonHeavy_zo8czl.ttf)"
 );
 
 
