@@ -84,23 +84,18 @@ function setup() {
   //in order top to bottom styles for each text
 
   divThin.style("font-family", "EstragonThin");
-
   divThin.style("text-align", "center");
-  // divThin.style("border", "dotted 6px black")
-  divThin.style("border-radius", "600px");
   divThin.style("color", "black");
   divThin.style("font-size", "50px");
   divThin.style("letter-spacing", "-3px");
-  // divThin.style("line-height", "125px")
+  divThin.style("margin-top","-10px")
 
   divLight.style("font-family", "EstragonLight");
-
   divLight.style("text-align", "center");
-  // divLight.style("border", "dotted 6px black")
   divLight.style("color", "black");
   divLight.style("font-size", "70px");
   divLight.style("letter-spacing", "-3px");
-  // divLight.style("line-height", "125px")
+   divLight.style("margin-top","-20px")
 
   h1.style("font-family", "EstragonRegular");
   h1.style("text-align", "center");
@@ -117,18 +112,21 @@ function setup() {
   divMedium.style("color", "black");
   divMedium.style("font-size", "90px");
   divMedium.style("letter-spacing", "-3px");
+  divMedium.style("margin-top","-20px")
 
   divBold.style("font-family", "EstragonBold");
   divBold.style("text-align", "center");
   divBold.style("color", "black");
-  divBold.style("font-size", "110px");
+  divBold.style("font-size", "120px");
   divBold.style("letter-spacing", "-3px");
+  divBold.style("margin-top","-50px")
 
   divHeavy.style("font-family", "EstragonHeavy");
   divHeavy.style("text-align", "center");
   divHeavy.style("color", "black");
-  divHeavy.style("font-size", "130px");
+  divHeavy.style("font-size", "150px");
   divHeavy.style("letter-spacing", "-3px");
+  divHeavy.style("margin-top","-80px")
 
   //floating boxes with info
   // Div 0 top left
@@ -161,6 +159,7 @@ function setup() {
   div1.style("line-height", "20px"); // Center text vertically
   div1.style("text-align", "center"); // Center text horizontally
   div1.style("color", "white");
+  div1.style("margin-top","-100px")
 
   // Div 2 medium right
   div2 = createDiv(
