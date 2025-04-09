@@ -1,11 +1,52 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: rgb(20,0,0);
+  background-color: rgba(0, 0, 0, 0);
+  font-family: monospace;
 }
 
 canvas {
   display: block;
   float: right;
-  border-left: solid 1px white;
 }
+
+#description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  z-index: 10;
+  width: 10%;
+
+}
+
+
+   .slider-box {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 150px;
+      height: 20px;
+      background: #444;
+      border: 2px solid #888;
+      border-radius: 5px;
+      outline: none;
+      transition: background 0.3s;
+    }
+    .slider-box::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      border: 2px solid #888;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .slider-box::-moz-range-thumb {
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      border: 2px solid #888;
+      border-radius: 50%;
+      cursor: pointer;
+    }
